@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clac-chars"
+version = "0.1.0"
+description = "Quantitative investment workflow package"
+requires-python = ">=3.12"
+authors = [
+    {name = "Weiguan-group", email = "your.email@example.com"}
+]
+dependencies = [
+    "pandas",
+    "numpy",
+    "ipykernel",
+    "PyYAML",
+    "sqlalchemy"
+]
+
+[tool.setuptools]
+packages = [] 
+
+
+[[tool.uv.index]]
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+default = true
